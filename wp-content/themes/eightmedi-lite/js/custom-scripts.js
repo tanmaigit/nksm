@@ -24,20 +24,7 @@
  	else if(winwidth <= 800 && winwidth >= 320){var mslide = 1; slidew = 300;}
  	//else if(winwidth <= 640 && winwidth >=320){var mslide = 1; slidew = 300;}
 
- 	$('.our-team-member.halfwidth .team-slider').bxSlider({
- 		pager:false,
- 		auto:true,
- 		moveSlides:1,
- 		minSlides: 1,
- 		maxSlides: mslide,
- 		slideWidth: slidew,
- 		slideMargin: 29
- 	});
- 	var winwidth = $(window).width();
- 	if(winwidth >= 1097){var mslide = 4; slidew = 270;}
- 	else if(winwidth <= 1096 && winwidth >= 801){var mslide = 2; slidew = 180;}
- 	else if(winwidth <= 800 && winwidth >= 320){var mslide = 1; slidew = 300;}
- 	$('.our-team-member.fullwidth .team-slider').bxSlider({
+ 	$('.team-slider').bxSlider({
  		pager:false,
  		auto:true,
  		moveSlides:1,
@@ -60,9 +47,11 @@
  		auto:true,
  		moveSlides:1,
  		minSlides: 1,
- 		maxSlides: mslide,
- 		slideWidth: slidew,
- 		slideMargin: 29
+ 		maxSlides: 1,
+		//speed: 1000,
+ 		pause: 9000,
+ 		//slideWidth: slidew,
+ 		//slideMargin: 29
  	});
 
  	if(winwidth <= 980){
